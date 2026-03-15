@@ -97,6 +97,13 @@ brew install ffmpeg
 bash gen_video.sh
 ```
 
+## 既存アカウント・ドメインへの追加デプロイ
+
+実運用では新規アカウントではなく、既存のAzureアカウントやドメインに相乗りする形が望ましい。
+サブディレクトリへの配置やカスタムドメイン（CDN経由）での公開手順・注意事項は以下を参照。
+
+→ [deploy_existing.md](./deploy_existing.md)
+
 ## リソースの削除
 
 ```bash
