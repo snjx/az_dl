@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>動画ダウンロード</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    h1 { font-size: 1.4rem; margin-bottom: 20px; color: #a0c4ff; }
+    video {
+      width: 100%;
+      max-width: 720px;
+      border-radius: 8px;
+      background: #000;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 32px;
+      background: #4361ee;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+    .download-btn:hover { background: #3a0ca3; }
+  </style>
+</head>
+<body>
+  <h1>サンプル動画</h1>
+  <video controls autoplay muted playsinline>
+    <source src="sample.mp4" type="video/mp4">
+    お使いのブラウザは動画再生に対応していません。
+  </video>
+  <a class="download-btn" href="sample.mp4" download="sample.mp4">
+    ⬇ 動画をダウンロード
+  </a>
+</body>
+</html>
